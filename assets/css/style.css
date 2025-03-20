@@ -1,0 +1,438 @@
+/* default css */
+
+@font-face {
+    font-family: 'Machérie';
+    src: url(../fonts/macherie/macherie.ttf);
+}
+
+@font-face {
+    font-family: 'AA-Stetica__black';
+    src: url(../fonts/stetica/AA\ Stetica\ Black_0.otf);
+}
+
+@font-face {
+    font-family: 'AA-Stetica__bold';
+    src: url(../fonts/stetica/AA\ Stetica\ Bold.otf);
+}
+
+@font-face {
+    font-family: 'AA-Stetica__light';
+    src: url(../fonts/stetica/AA\ Stetica\ Light.otf);
+}
+
+@font-face {
+    font-family: 'AA-Stetica__medium';
+    src: url(../fonts/stetica/AA\ Stetica\ Medium.otf);
+}
+
+@font-face {
+    font-family: 'AA-Stetica__regular';
+    src: url(../fonts/stetica/AA\ Stetica\ Regular.otf);
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #070E14;
+    background-image: url(../img/bcc.png);
+    background-repeat: no-repeat;
+}
+
+@media (min-width: 1921px) {
+    body {
+        background-size: 100% 87%;
+    }
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul, li {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    max-width: 111.25rem;
+    margin: 0 auto;
+}
+
+@media (max-width: 111.25rem) {
+    .container {
+        padding: 0 2rem;
+    }
+}
+
+/* default css */
+
+/* header */
+
+.header-wrapper {
+    margin-top: 5.125rem;
+}
+
+.header-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    width: 100%;
+}
+
+.header-title__txt {
+    max-width: 600px;
+    width: 100%;
+}
+
+.header-title__txt h2 {
+    color: #FFF;
+    font-family: 'Machérie';
+    font-size: 2.5rem;
+    font-style: normal;
+    line-height: 130%; /* 52px */
+    letter-spacing: 0.075rem;
+}
+
+.header-title__btns {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.header-title__btn {
+    padding: 1.5rem 2.5rem;
+    border: 0.063rem solid #FFF;
+    background: rgba(0, 0, 0, 0.10);
+
+    color: #FFF;
+    text-align: center;
+    font-family: "AA-Stetica__regular";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.header-title__btn:hover {
+    border: 1px solid #FFF;
+    background: #FFF;
+
+    color: #000;
+}
+
+/* header */
+
+/* main */
+
+.main-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.main-photo {
+    margin-left: -19.438rem;
+    margin-top: 8.375rem;
+
+    max-width: 68rem;
+    max-height: 68rem;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.main-photo__logo {
+    position: absolute;
+    top: 43%;
+    bottom: 0;
+    right: 18%;
+    z-index: 2;
+
+    max-width: 27.75rem;
+    max-height: 7.563rem;
+    width: max-content;
+    height: max-content;
+}
+
+@media (min-width: 2000px) {
+    .main-photo {
+        margin-left: -15.438rem;
+    }
+}
+
+@media (min-width: 2200px) {
+    .main-photo {
+        margin-left: -10.438rem;
+    }
+}
+
+@media (min-width: 2400px) {
+    .main-photo {
+        margin-left: -5.438rem;
+    }
+}
+
+@media (min-width: 2600px) {
+    .main-wrapper {
+        justify-content: center;
+    }
+
+    .main-photo__logo {
+        position: absolute;
+        top: 43%;
+        bottom: 0;
+        /* left: 0; */
+        right: 30%;
+        z-index: 2;
+    
+        max-width: 27.75rem;
+        max-height: 7.563rem;
+        width: max-content;
+        height: max-content;
+    }
+}
+
+@media (max-width: 1441px) {
+    .main-photo {
+        margin-left: -25.438rem;
+    }
+}
+
+.main-rest__links {
+    display: flex;
+    flex-direction: column;
+    gap: 3.563rem;
+}
+
+.main-rest__link {
+    display: flex;
+    flex-direction: row;
+    gap: 4.125rem;
+    justify-content: center;
+    align-items: center;
+
+    /* max-width: 554px; */
+    width: min-content;
+
+    cursor: pointer;
+
+    transition: all 0.5s ease-in-out;
+}
+
+.main-rest__link:hover .rest-link__photo {
+    opacity: 1;
+}
+
+.main-rest__link:hover .rest-link__title {
+    opacity: 1;
+}
+
+.main-rest__link:hover .rest-link__subtitle {
+    display: block;
+}
+
+.main-rest__links .main-rest__link:nth-child(2) {
+    margin-left: 4.375rem;
+}
+
+.main-rest__links .main-rest__link:nth-child(3) {
+    margin-left: 8.75rem;
+}
+
+.main-rest__links .main-rest__link:nth-child(4) {
+    margin-left: 4.375rem;
+}
+
+.main-rest__links .main-rest__link:nth-child(5) {
+    margin-left: 0;
+}
+
+@media (min-width: 1600px) {
+    .main-rest__links .main-rest__link:nth-child(2) {
+        margin-left: 18.375rem;
+    }
+    
+    .main-rest__links .main-rest__link:nth-child(3) {
+        margin-left: 22.75rem;
+    }
+    
+    .main-rest__links .main-rest__link:nth-child(4) {
+        margin-left: 18.375rem;
+    }
+    
+    .main-rest__links .main-rest__link:nth-child(5) {
+        margin-left: 0;
+    }
+}
+
+.rest-link__photo {
+    max-width: 14.438rem;
+    max-height: 14.438rem;
+    width: max-content;
+    height: max-content;
+
+    opacity: 0.6;
+}
+
+.rest-link__txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.75rem;
+}
+
+.rest-link__title {
+    color: #FFF;
+    font-family: "Machérie";
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%; /* 52px */
+    letter-spacing: 0.075rem;
+
+    width: auto;
+
+    opacity: 0.6;
+}
+
+.rest-link__subtitle {
+    color: #FFF;
+    font-family: "AA-Stetica__regular";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    max-width: 15.563rem;
+    width: max-content;
+
+    display: none;
+}
+
+/* main */
+
+/* footer */
+
+.footer-wrapper {
+    margin-top: 18.375rem;
+    margin-bottom: 3rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.footer-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 2rem;
+
+    width: 100%;
+}
+
+.footer-phone {
+    margin-bottom: 1.25rem;
+}
+
+.footer-phone a {
+    color: #FFF;
+    font-family: "AA-Stetica__regular";
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer-email {
+    margin-bottom: 0.75rem;
+}
+
+.footer-email a {
+    color: #FFF;
+    font-family: "AA-Stetica__regular";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer-address span {
+    color: #FFF;
+    font-family: "AA-Stetica__regular";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer-txt {
+    color: #FFF;
+    font-family: "AA-Stetica__regular";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.footer-link {
+    color: #ffffff70;
+    font-family: "AA-Stetica__regular";
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer-direkt {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-direkt span {
+    color: #FFF;
+    font-family: "AA-Stetica__regular";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer-direkt img {
+    max-width: 102px;
+    max-height: 11px;
+    width: 100%;
+    height: 100%;
+}
+
+/* footer */
